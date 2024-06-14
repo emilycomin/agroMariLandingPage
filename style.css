@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+a{
+    text-decoration: none;
+}button{
+    cursor: pointer;
+}
+img{
+    object-fit: cover;
+}
+h2{
+    font-weight: 400;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    gap: 8rem;
+    position: absolute;
+    top: 16px;
+    /* left: 50%;
+    transform: translate(-50%); */
+    align-items: center;
+    padding: 12px;
+    background-color: transparent;
+}
+nav img{
+    height: 90px;
+}
+.navLinks{
+    display: flex;
+    font-size: 1.5rem;
+    gap: 5rem; 
+}
+.navLinks a{
+    color: rgb(115, 184, 12);
+    font-weight: 600;
+}
+.navLinks a:hover{
+    color: rgb(85, 136, 10);
+    transition: all 0.2s ease;
+}
+.navLinks a::after{
+    color: rgb(220, 146, 27);;
+}
+nav button{
+    background-color: transparent;
+    border: none;
+    font-size: 3rem;
+    color: rgb(23, 162, 62);
+}
+.paginadecontato{
+    background-color: antiquewhite;
+    height:500px;
+}
