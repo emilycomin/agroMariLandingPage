@@ -1,3 +1,12 @@
+:root {
+    --vanilla: #FCF5B5ff;
+    --yellow-green900:#55880a ;
+    --yellow-green: #a4c735;
+    --yellow-green100: #ebf4cf;
+    --mikado-yellow: #FAC424ff;
+    --dark-slate-gray: #26454Bff;
+    --fulvous: #e98719;
+  }
 *{
     margin: 0;
     padding: 0;
@@ -15,87 +24,178 @@ img{
 h2{
     font-weight: 400;
 }
-
 nav{
     display: flex;
-    justify-content: space-between;
-    gap: 8rem;
-    position: absolute;
-    top: 16px;
-    /* left: 50%;
-    transform: translate(-50%); */
     align-items: center;
+    justify-content: space-around;
     padding: 12px;
-    background-color: transparent;
+    background-color: var(--yellow-green100);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 5;
 }
 nav img{
-    height: 90px;
+    height: 110px;
 }
 .navLinks{
     display: flex;
     font-size: 1.5rem;
     gap: 5rem; 
+    align-items:center;
 }
 .navLinks a{
-    color: rgb(115, 184, 12);
+    color: var(--yellow-green);
     font-weight: 600;
 }
 .navLinks a:hover{
     color: rgb(85, 136, 10);
     transition: all 0.2s ease;
 }
-.navLinks a::after{
-    color: rgb(220, 146, 27);;
+.navLinks, button a:visited{
+    color: var(--fulvous);
 }
-nav button{
+nav button, #contato > button{
     background-color: transparent;
     border: none;
     font-size: 3rem;
-    color: rgb(23, 162, 62);
-}
-.paginadecontato{
-    background-color: antiquewhite;
-    height:500px;
+    color: var(--yellow-green);
 }
 .aLoja{
-    margin-top: 140px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    position: relative;
-}
-.aLoja img{
-    width: 100vw;
-    filter: blur(2px);
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 10px;
+    background-color: var(--yellow-green100);
+    height: 100vh;
 }
 .bottomSection{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 50%;
+    width: 30%;
     gap: 20px;
-    position: absolute;
-    background-color:  rgba(115, 184, 12, 0.952);
-    border-radius: 20px ;
-    padding: 30px;
-    color: whitesmoke;
-    font-variant: antialised;
+    margin-top: 150px;
+    justify-content: center;
+    align-items: center;
 }
 .bottomSection p{
     line-height: 1.5rem;
-    text-align: center;
+    text-align: justify;
     font-weight: 500;
+    max-width: 900px;
 }
-.bottomSection .redesSociais{
+.redesSociais{
     display: flex;
-    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 10px;
 }
-.bottomSection .redesSociais button{
+.redesSociais h2{
+    font-weight: 800;
+    text-align: center;
+}
+.redesSociaisButtons{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+ .redesSociais button{
     background-color: transparent;  
     border: none;
+    margin-left: 15px;
 }
 .redesSociais button i{
-    font-size: 30px;
-    color:whitesmoke;
+    font-size: 3rem;
+    color:var(--dark-slate-gray);
+}
+.separator{
+    background-image: url(/img/container.png);
+    background-repeat: repeat-x;
+    filter: blur(2px);
+    height: 150px;
+    width: 100%;
+}
+.produtos{
+    text-align: center;
+    padding: 30px;
+    color: var(--dark-slate-gray);
+}
+.produtos .cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 60px;
+    padding: 30px;
+    align-items: center;
+}
+.cards .cardProduto{
+    display: flex;
+    flex-direction: column;
+    color: var(--dark-slate-gray);
+    padding: 20px;
+    gap: 10px;
+    border-radius: 16px;
+    width: 300px;
+    height: 400px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.cardProduto img{
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    margin: 0 auto;
+}
+#contato{
+    background-color: var(--yellow-green100);
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+.whatsAppButton{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.whatsAppButton p{
+    width: 50%;
+    text-align: justify;
+}
+.whatsAppButton button{
+    background-color: transparent;
+    border: none;
+    width: 100px;
+    bottom: 55px;
+    font-size: 4rem;
+    line-height: 13px;
+    padding: 10px;
+    border-radius: 10px;
+    border:1px solid var(--yellow-green100); box-shadow: 2px 2px 3px #c3c2c2;
+}
+.googleMaps{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+@media only screen and (max-width:760px) {
+body{
+    background-color: #e98719;
+}
+.navLinks{
+    flex-direction: column;
+    position: initial;
+}
 }

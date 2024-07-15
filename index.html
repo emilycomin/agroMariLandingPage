@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <title>Agro Mari</title>
+    <link href="locatorplus.css" rel="stylesheet">
     
 </head>
 <body>
     <nav>
         <div class="logo">
-            <img src="./img/AGRO.jpg" alt="">
+            <img src="./img/AGRoMARILogo.png" alt="">
         </div>
         <div class="navLinks">
             <a href="#">A Loja</a>
@@ -24,12 +25,12 @@
             <a href="#">Contato</a>
         </div>
         <div class="whatsapp">
-            <button><i class="ph ph-whatsapp-logo"></i></button>
+            <button> <a href="https://api.whatsapp.com/send?phone=555189065594&text=Olá!%20Gostaria%20de%20mais%20informações!"><i class="ph ph-whatsapp-logo"></i></a></button>
         </div>
+        
     </nav>
 
     <div class="aLoja">
-        <img src="./img/container.png">
         <div class="bottomSection">
             <h1>A Agro Mari</h1>
             <p>  A Agromari é uma empresa que nasceu em 2011 e vem sempre crescendo e tendo
@@ -38,31 +39,105 @@
                 Contamos com profissionais qualificados que trabalham com carinho e profissionalismo,
                 seja no tratamento do seu pet quanto na orientação de qual produto é mais indicado para ele.
             </p>
-            <h2>Acompanhe-nos nas nossas redes sociais!</h2>
             <div class="redesSociais">
-                <button><i class="ph-bold ph-google-logo"></i></button>
-                <button><i class="ph-bold ph-instagram-logo"></i></button>
-                <button><i class="ph-bold ph-facebook-logo"></i></button>
+                <h2>Acompanhe-nos nas nossas redes sociais!</h2>
+                <div class="redesSociaisButtons">
+                    <button><i class="ph-bold ph-google-logo"></i></button>
+                    <button><i class="ph-bold ph-instagram-logo"></i></button>
+                    <button><i class="ph-bold ph-facebook-logo"></i></button>
+                </div>
             </div>
         </div>
+        <img src="./img/veterinarian-examining-dog.jpg"/>
+    </div>
+    <div class="separator"> 
+        <!-- div com a imagem de cachorros -->
     </div>
     <div class="produtos">
-        <div class="card">
-            <div class="cardProduto">
-                <h2>Rações</h2>
-            </div>
+        <h1>CONHEÇA NOSSOS PRODUTOS E SERVIÇOS</h1>
+        <div class="cards">
+                <div class="cardProduto">
+                    <img src="./img/racao.jpg">
+                    <h2>Rações</h2>
+                    <p>Trabalhamos com diversos tipos, marcas e linhas de rações e petiscos. </p>
+                </div>
+                <div class="cardProduto">
+                    <img src="./img/acessórios.jpg">
+                    <h2>Acessórios</h2>
+                    <p>Todos os acessórios necessários para seu pet você encontra aqui! Ampla variedade e preço justo.
+                        Camas, roupas, coleiras, brinquedos. 
+                    </p>
+                </div>
+                <div class="cardProduto">
+                    <img src="./img/medicamentos.jpg">
+                    <h2>Medicamentos</h2>
+                    <p>Temos uma farmácia pet com os principais medicamentos e os melhores laboratórios.</p>
+                </div>
+                <div class="cardProduto">
+                    <img src="./img/veterinarian-examining-dog.jpg">
+                    <h2>Atendimento Veterináio</h2>
+                    <p>Nossa veterinária Drª Helen..... é clina geral e especialista em Dermatologia. 
+                        Atende de seg a sexta das 13:00 até 13:00. 
+                    </p>
+                </div>
+                <div class="cardProduto">
+                    <img src="./img/puppy-bath-time-stockcake.jpg">
+                    <h2>Banho & Tosa</h2>
+                    <p>Temos ums banho & tosa para deixar seu melhor amigo lindo e cheiroso. Agende se horário
+                        pelo Whatsapp!
+                    </p>
+                </div>
+                <div class="cardProduto">
+                    <img src="img/taxidog.jpg">
+                    <h2>Tele-busca e tele-entrega</h2>
+                    <p>Buscamos e entregamos seu pet de banho tomado e o que mais ele precisar! <span class="areaDeEntrega">Verifique área de entrega!</span></p>
+                </div>
         </div>
-        <div class="card">
-            <div class="cardProduto">
-                <h2>Acessórios</h2>
-            </div>
-        </div>
-        <div class="card">
-            <div class="cardProduto">
-                <h2>Medicamentos</h2>
-            </div>
-        </div>
-        
     </div>
+    <section id="contato">
+
+        <div class="whatsAppButton">
+            <h1>Entre em contato!</h1>
+            <p>Conheça nossos produtos, tire suas dúvidas, 
+                marque seu horário para o banho e tosa tudo pelo nosso 
+                WhatsApp!</p>
+            <button> <a href="https://api.whatsapp.com/send?phone=555189065594&text=Olá!%20Gostaria%20de%20mais%20informações!"><i class="ph ph-whatsapp-logo"></i></a></button>
+            
+            
+                <h1>Horário de funcionamento:</h1>
+                <p>Segunda à Sexta: 9:00 até 19:00</p>
+                <p>Sábado: 9:00 até 17:00</p>
+                <p>Domingos e Feriados: Fechados </p>
+       
+        </div>
+         <!-- START Widget WhastApp hospedagemwordpresspro -->
+        <a href="https://api.whatsapp.com/send?phone=555189065594&text=Olá!%20Gostaria%20de%20mais%20informações!" id="waurlsite" class="bt-whatsApp" target="_blank" style="right:25px; position:fixed;width:60px;height:60px;bottom:40px;z-index:100;">
+        <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDEyOCAxMjgiIGlkPSJTb2NpYWxfSWNvbnMiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDEyOCAxMjgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxnIGlkPSJfeDM2X19zdHJva2UiPjxnIGlkPSJXaGF0c0FwcCI+PHJlY3QgY2xpcC1ydWxlPSJldmVub2RkIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGhlaWdodD0iMTI4IiB3aWR0aD0iMTI4Ii8+PHBhdGggY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNNDYuMTE0LDMyLjUwOSAgICBjLTEuMjQxLTIuOTcyLTIuMTgyLTMuMDg1LTQuMDYyLTMuMTYxYy0wLjY0LTAuMDM3LTEuMzUzLTAuMDc0LTIuMTQ0LTAuMDc0Yy0yLjQ0NiwwLTUuMDAzLDAuNzE1LTYuNTQ2LDIuMjk1ICAgIGMtMS44OCwxLjkxOS02LjU0NSw2LjM5Ni02LjU0NSwxNS41NzZjMCw5LjE4MSw2LjY5NSwxOC4wNiw3LjU5OCwxOS4zMDNjMC45NDEsMS4yNCwxMy4wNTMsMjAuMzU0LDMxLjg2LDI4LjE0NCAgICBjMTQuNzA3LDYuMDk1LDE5LjA3MSw1LjUzLDIyLjQxOCw0LjgxNmM0Ljg5LTEuMDUzLDExLjAyMS00LjY2NywxMi41NjQtOS4wM2MxLjU0Mi00LjM2NSwxLjU0Mi04LjA5LDEuMDktOC44OCAgICBjLTAuNDUxLTAuNzktMS42OTMtMS4yNC0zLjU3My0yLjE4MmMtMS44OC0wLjk0MS0xMS4wMjEtNS40NTYtMTIuNzUxLTYuMDU4Yy0xLjY5My0wLjYzOS0zLjMxLTAuNDEzLTQuNTg4LDEuMzkzICAgIGMtMS44MDYsMi41MjEtMy41NzMsNS4wOC01LjAwMyw2LjYyMmMtMS4xMjgsMS4yMDQtMi45NzIsMS4zNTUtNC41MTQsMC43MTVjLTIuMDY5LTAuODY0LTcuODYxLTIuODk4LTE1LjAwOC05LjI1NiAgICBjLTUuNTMtNC45MjgtOS4yOTEtMTEuMDYtMTAuMzgxLTEyLjkwNGMtMS4wOTEtMS44ODEtMC4xMTMtMi45NzMsMC43NTItMy45ODhjMC45NDEtMS4xNjcsMS44NDMtMS45OTQsMi43ODMtMy4wODYgICAgYzAuOTQxLTEuMDkxLDEuNDY3LTEuNjU1LDIuMDY5LTIuOTM1YzAuNjQtMS4yNDEsMC4xODgtMi41MjEtMC4yNjMtMy40NjJDNTEuNDE4LDQ1LjQxNCw0Ny42NTcsMzYuMjMzLDQ2LjExNCwzMi41MDl6IE02My45ODEsMCAgICBDMjguNjk5LDAsMCwyOC43MDcsMCw2My45OTljMCwxMy45OTYsNC41MTQsMjYuOTc3LDEyLjE4NywzNy41MTJMNC4yMTIsMTI1LjI5bDI0LjYtNy44NjJDMzguOTMsMTI0LjEyNSw1MS4wMDQsMTI4LDY0LjAxOSwxMjggICAgQzk5LjMwMSwxMjgsMTI4LDk5LjI5MSwxMjgsNjQuMDAxYzAtMzUuMjkyLTI4LjY5OS02My45OTktNjMuOTgxLTYzLjk5OWgtMC4wMzdWMHoiIGZpbGw9IiM2N0MxNUUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgaWQ9IldoYXRzQXBwXzFfIi8+PC9nPjwvZz48L3N2Zz4=" alt="" width="60px">
+     </a>
+        <span id="alertWapp" style="right:30px; visibility: hidden; position:fixed;	width:17px;	height:17px;bottom:90px; background:red;z-index:101; font-size:11px;color:#fff;text-align:center;border-radius: 50px; font-weight:bold;line-height: normal; "> 1 </span>
+        <div id="msg1" style="right: 90px; visibility: hidden; background: #fff;color: #000;position: fixed;width: 100px;bottom: 55px;font-size: 12px;line-height: 13px;padding: 3px; border-radius: 10px; border:1px solid #e2e2e2; box-shadow: 2px 2px 3px #999;z-index:100; ">Entre em contato!</div>
+       
+        <script type="text/javascript">function showIt2() {document.getElementById("msg1").style.visibility = "visible";}    setTimeout("showIt2()", 5000); function hiddenIt() {document.getElementById("msg1").style.visibility = "hidden";}setTimeout("hiddenIt()", 15000); function showIt3() {document.getElementById("msg1").style.visibility = "visible";} setTimeout("showIt3()", 25000);  msg1.onclick = function() {document.getElementById('msg1').style.visibility = "hidden"; };function alertW() { document.getElementById("alertWapp").style.visibility = "visible";	} setTimeout("alertW()", 15000); </script>
+            <!-- END Widget WhastApp -->
+    
+        <div class="googleMaps">
+            <h1>Visite a nossa loja</h1>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3450.0079529516906!2d-51.178973624743236!3d-30.151188636234174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95199b486b981c6d%3A0xebb21f367a6d38ac!2sAgroMari!5e0!3m2!1spt-BR!2sbr!4v1720460563494!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    <footer>
+        <div class="footerLeft">
+            <p>AgroMari, o melhor para o seu amigo. Todos os direitos reservados, 2024.</p>
+            <p>Agro-Mari Ivonir Comin Comercio de Produtos Para Animais LTDA 13.396.586/0001-05</p>
+        </div>
+        <div class="footerRight">
+            <h1>Formass de pagamento</h1>
+            
+
+        </div>
+
+
+    </footer>
+   
 </body>
 </html>
