@@ -212,9 +212,24 @@ footer p {
     margin: 5px 5px;
 }
 @media only screen and (max-width:760px) {
-
-.navLinks{
-    flex-direction: column;
-    position: initial;
-}
+    .aLoja{
+        flex-direction: column;
+    }
+    .bottomSection{
+        width: 100%;
+        padding: 20px;
+    }
+    .aLoja img{
+        width: 60%;
+        margin: 0 auto;
+    }
+    .separator{
+        background-image: none;
+    }
+    .contatoContent{
+        flex-direction: column;
+    }
+    footer{
+        flex-direction: column;
+    }
 }
