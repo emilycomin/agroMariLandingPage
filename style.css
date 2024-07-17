@@ -25,7 +25,7 @@ img{
 h2{
     font-weight: 400;
 }
-nav{
+header{
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -36,7 +36,7 @@ nav{
     top: 0;
     z-index: 5;
 }
-nav img{
+header img{
     height: 110px;
 }
 .navLinks{
@@ -56,7 +56,7 @@ nav img{
 .navLinks, button a:visited{
     color: var(--fulvous);
 }
-nav button, #contato > button{
+header button, #contato > button{
     background-color: transparent;
     border: none;
     font-size: 3rem;
@@ -193,6 +193,12 @@ nav button, #contato > button{
     flex-direction: column;
     align-items: center;
     gap: 15px;
+    width: 100%;
+    height: 350px;
+}
+.googleMaps iframe{
+    width: 80%;
+    height: 80%;
 }
 footer{
     display: flex;
@@ -211,7 +217,53 @@ footer p {
     height: 30px;
     margin: 5px 5px;
 }
+.menu{
+    display: none;
+}
+input{
+    display: none;
+}
 @media only screen and (max-width:760px) {
+    header img{
+        width: 200px;
+        object-fit: contain;
+    }
+    .navLinks{
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        top: 110px;
+        height: 0;
+        width: 100%;
+        background-color: var(--yellow-green100);
+        overflow: hidden;
+        transition: all 500ms ease;
+    }
+    .menu{
+        color: #a4c735;
+        font-size: 3.5rem;
+    }
+    input:checked ~ .navLinks{
+        height: 90vh;
+
+    }
+   .menu{
+       display: block;
+   }
+    .menu label{
+        height: 60px;
+        width: 60px;
+        position: absolute;
+    }
+    input:checked ~ .menu .ph-list{
+        display: none;
+    }
+    input:checked ~ .menu .ph-x-circle{
+        display: block;
+    }
+    .ph-x-circle{
+        display: none;
+    }
     .aLoja{
         flex-direction: column;
     }
@@ -230,6 +282,11 @@ footer p {
         flex-direction: column;
     }
     footer{
-        flex-direction: column;
+        align-items: flex-start;
+        font-size: 0.75rem;
+    }
+    .footerRight .bandeirasPagamento{
+        flex-direction: row;
+
     }
 }
