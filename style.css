@@ -275,6 +275,7 @@ input{
     .aLoja{
         flex-direction: column;
         width: 100%;
+        margin-top: 30px;
     }
     .bottomSection{
         width: 100%;
